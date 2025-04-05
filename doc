@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wither Bot Commands Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #4CAF50;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #333 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        #main {
+            padding: 20px;
+            background: #fff;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        #main h2 {
+            color: #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 10px;
+        }
+        #main p {
+            color: #333;
+        }
+        #main ul {
+            list-style-type: square;
+            color: #4CAF50;
+        }
+        #main ul li {
+            margin: 10px 0;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            border-top: #4CAF50 3px solid;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Discord Bot Commands</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#moderation">Moderation</a></li>
+                    <li><a href="#tickets">Tickets</a></li>
+                    <li><a href="#fun-commands">Fun Commands</a></li>
+                    <li><a href="#utility-commands">Utility Commands</a></li>
+                    <li><a href="#music-commands">Music Commands</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="main">
+            <h2 id="moderation">Moderation Commands</h2>
+            <p>Commands to help manage your server:</p>
+            <ul>
+                <li><strong>!ban [user] [reason]</strong> - Bans a user from the server.</li>
+                <li><strong>!kick [user] [reason]</strong> - Kicks a user from the server.</li>
+                <li><strong>!mute [user] [duration]</strong> - Mutes a user for a specified duration.</li>
+                <li><strong>!unmute [user]</strong> - Unmutes a user.</li>
+                <li><strong>!warn [user] [reason]</strong> - Issues a warning to a user.</li>
+                <li><strong>!clear [number]</strong> - Deletes the specified number of messages from a channel.</li>
+                <li><strong>!lock [channel]</strong> - Locks a channel, preventing users from sending messages.</li>
+                <li><strong>!unlock [channel]</strong> - Unlocks a channel, allowing users to send messages.</li>
+                <li><strong>!slowmode [seconds]</strong> - Sets the slowmode duration for a channel.</li>
+            </ul>
+
+            <h2 id="tickets">Ticket Commands</h2>
+            <p>Commands to manage support tickets:</p>
+            <ul>
+                <li><strong>!ticket create [issue]</strong> - Creates a new ticket with the specified issue.</li>
+                <li><strong>!ticket close [ticket_id]</strong> - Closes the specified ticket.</li>
+                <li><strong>!ticket list</strong> - Lists all open tickets.</li>
+                <li><strong>!ticket info [ticket_id]</strong> - Provides information about the specified ticket.</li>
+                <li><strong>!ticket assign [ticket_id] [user]</strong> - Assigns a user to the specified ticket.</li>
+                <li><strong>!ticket unassign [ticket_id]</strong> - Unassigns the user from the specified ticket.</li>
+                <li><strong>!ticket reopen [ticket_id]</strong> - Reopens a closed ticket.</li>
+            </ul>
+
+            <h2 id="fun-commands">Fun Commands</h2>
+            <p>Commands to add some fun to your server:</p>
+            <ul>
+                <li><strong>!joke</strong> - Tells a random joke.</li>
+                <li><strong>!meme</strong> - Displays a random meme.</li>
+                <li><strong>!roll [number]</strong> - Rolls a dice with the specified number of sides.</li>
+                <li><strong>!8ball [question]</strong> - Answers a yes/no question with a random response.</li>
+                <li><strong>!cat</strong> - Shows a random cat picture.</li>
+                <li><strong>!dog</strong> - Shows a random dog picture.</li>
+                <li><strong>!quote</strong> - Provides a random motivational quote.</li>
+                <li><strong>!trivia</strong> - Starts a trivia game with random questions.</li>
+            </ul>
+
+            <h2 id="utility-commands">Utility Commands</h2>
+            <p>Commands to provide useful utilities:</p>
+            <ul>
+                <li><strong>!ping</strong> - Checks the bot's latency.</li>
+                <li><strong>!userinfo [user]</strong> - Displays information about the specified user.</li>
+                <li><strong>!serverinfo</strong> - Displays information about the server.</li>
+                <li><strong>!avatar [user]</strong> - Shows the avatar of the specified user.</li>
+                <li><strong>!poll [question]</strong> - Creates a poll with the specified question.</li>
+            </ul>
+
+            <h2 id="music-commands">Music Commands</h2>
+            <p>Commands to manage music playback:</p>
+            <ul>
+                <li><strong>!play [song]</strong> - Plays the specified song.</li>
+                <li><strong>!pause</strong> - Pauses the current song.</li>
+                <li><strong>!resume</strong> - Resumes the paused song.</li>
+                <li><strong>!skip</strong> - Skips the current song.</li>
+                <li><strong>!queue</strong> - Displays the current song queue.</li>
+                <li><strong>!np</strong> - Shows the currently playing song.</li>
+                <li><strong>!stop</strong> - Stops the music and clears the queue.</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>Wither Bot Commands Documentation &copy; 2025</p>
+    </footer>
+</body>
+</html>
